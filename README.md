@@ -89,15 +89,15 @@ server_name test;
 
 location ~\.php$ {
 
-	include......
+include......
 	
-	fastcgi_pass unix:/run/php/php8.1-fpm.sock; (меняем версию php)
+fastcgi_pass unix:/run/php/php8.1-fpm.sock; (меняем версию php)
 	
 }
 
 location ~ /\.ht {
 
-	deny all;
+deny all;
 	
 }
 
